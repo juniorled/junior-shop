@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1765b5">
+<title>Junior Shop | Téléphones & accessoires</title>
+<style>
+:root{--blue:#1765b5;--deep:#10477f;--pale:#edf5ff;--ink:#172b45;--muted:#63758b;--line:#dce8f5}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7faff}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.wrap{width:min(1100px,92%);margin:auto}.nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:21px;font-weight:800;letter-spacing:.4px;color:var(--blue)}.brand span{color:#1c2d44}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+.hero{margin:26px auto;background:linear-gradient(120deg,#eaf3ff,#fff);border:1px solid var(--line);border-radius:24px;padding:42px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:20px}
+.eyebrow{color:var(--blue);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:12px 0;color:#12385f}
+.hero p{color:var(--muted);line-height:1.65;max-width:520px}
+.cta{display:inline-block;background:var(--blue);color:white;text-decoration:none;padding:13px 19px;border-radius:12px;font-weight:700;margin-top:8px}
+.phone-art{min-height:210px;display:flex;align-items:center;justify-content:center;gap:15px}
+.device{width:112px;height:190px;border-radius:24px;background:linear-gradient(145deg,#173d69,#3b8de0);border:5px solid #173451;box-shadow:0 18px 35px #174d8726;transform:rotate(-8deg);position:relative}
+.device:before{content:"";position:absolute;top:8px;left:36px;width:30px;height:6px;border-radius:8px;background:#102b49}
+.bud{width:74px;height:90px;border-radius:18px;background:#fff;border:1px solid #d8e7f7;box-shadow:0 12px 25px #174d8720;display:grid;place-items:center;font-size:35px}
+section{padding:18px 0 34px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:16px}
+h2{margin:0;color:#153b64;font-size:25px}.sub{color:var(--muted);font-size:14px;margin-top:6px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.filters button{border:1px solid var(--line);background:#fff;color:var(--deep);padding:9px 13px;border-radius:20px;cursor:pointer}
+.filters button.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden}
+.product-art{height:145px;background:linear-gradient(135deg,#eff6ff,#dcecff);display:grid;place-items:center;font-size:54px}
+.card-body{padding:15px}.card h3{font-size:16px;margin:0 0 7px}.card p{color:var(--muted);font-size:13px;line-height:1.5;min-height:38px;margin:0}
+.price{font-weight:700;color:var(--blue);font-size:14px;margin:12px 0}
+.small-btn{display:block;text-align:center;text-decoration:none;color:var(--blue);border:1px solid #b9d5f4;padding:10px;border-radius:10px;font-size:13px;font-weight:700}
+.notice{background:#fff8e8;border:1px solid #f2dfb4;color:#76531b;border-radius:13px;padding:13px 15px;font-size:13px;line-height:1.5;margin:18px 0}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.info div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px}.info b{display:block;color:#174b80;margin-bottom:6px}.info span{font-size:13px;color:var(--muted);line-height:1.5}
+footer{background:#12385f;color:#dceaff;padding:25px 0;margin-top:20px;font-size:13px}footer b{font-size:17px}
+@media(max-width:700px){nav a{margin-left:8px;font-size:12px}.hero{padding:25px;grid-template-columns:1fr}.phone-art{min-height:150px}.device{height:150px;width:90px}.grid{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:1fr}.section-head{display:block}}
+@media(max-width:420px){.grid{grid-template-columns:1fr 1fr}.product-art{height:115px}.card-body{padding:11px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <div class="brand">JUNIOR <span>SHOP</span></div>
+  <nav><a href="#produits">Produits</a><a href="#infos">Infos</a><a href="#contact">Contact</a></nav>
+</div></header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Téléphones & accessoires</div>
+      <h1>La technologie à votre portée.</h1>
+      <p>Bienvenue chez Junior Shop. Découvrez notre sélection de smartphones et d'accessoires. Nous confirmons chaque disponibilité, prix et livraison avant toute commande.</p>
+      <a class="cta" href="#produits">Découvrir les produits</a>
+    </div>
+    <div class="phone-art" aria-label="Illustration de téléphone et écouteurs">
+      <div class="device"></div><div class="bud">🎧</div>
+    </div>
+  </div>
+
+  <section id="produits">
+    <div class="section-head"><div><h2>Notre catalogue</h2><div class="sub">Exemples de catégories — disponibilité et prix à confirmer.</div></div></div>
+    <div class="filters">
+      <button class="active" data-filter="all">Tout voir</button>
+      <button data-filter="phone">Téléphones</button>
+      <button data-filter="accessory">Accessoires</button>
+    </div>
+    <div class="grid">
+      <article class="card" data-kind="phone"><div class="product-art">📱</div><div class="card-body"><h3>Smartphones Android</h3><p>Plusieurs modèles et capacités selon disponibilité.</p><div class="price">Prix à confirmer</div><a class="small-btn" href="#contact">Demander les modèles</a></div></article>
+      <article class="card" data-kind="phone"><div class="product-art">📲</div><div class="card-body"><h3>iPhone</h3><p>Modèles neufs ou reconditionnés à vérifier.</p><div class="price">Prix à confirmer</div><a class="small-btn" href="#contact">Demander les modèles</a></div></article>
+      <article class="card" data-kind="accessory"><div class="product-art">🎧</div><div class="card-body"><h3>Écouteurs</h3><p>Écouteurs filaires et sans fil selon stock.</p><div class="price">Prix à confirmer</div><a class="small-btn" href="#contact">Demander les modèles</a></div></article>
+      <article class="card" data-kind="accessory"><div class="product-art">🔌</div><div class="card-body"><h3>Chargeurs & câbles</h3><p>Accessoires compatibles à sélectionner.</p><div class="price">Prix à confirmer</div><a class="small-btn" href="#contact">Demander les modèles</a></div></article>
+      <article class="card" data-kind="accessory"><div class="product-art">🛡️</div><div class="card-body"><h3>Coques & protections</h3><p>Protections adaptées au modèle du téléphone.</p><div class="price">Prix à confirmer</div><a class="small-btn" href="#contact">Demander les modèles</a></div></article>
+      <article class="card" data-kind="accessory"><div class="product-art">🔋</div><div class="card-body"><h3>Batteries externes</h3><p>Capacités et marques à confirmer auprès du fournisseur.</p><div class="price">Prix à confirmer</div><a class="small-btn" href="#contact">Demander les modèles</a></div></article>
+    </div>
+    <div class="notice"><b>Information importante :</b> Junior Shop recherche encore ses fournisseurs. Les articles affichés sont des catégories de démonstration, pas des produits annoncés comme disponibles. Aucun paiement ne doit être envoyé avant confirmation écrite du produit, du prix total et des conditions de livraison.</div>
+  </section>
+
+  <section id="infos">
+    <h2>Comment ça marche ?</h2><div class="sub" style="margin-bottom:16px">Un parcours simple et transparent.</div>
+    <div class="info">
+      <div><b>1. Choisissez</b><span>Repérez le téléphone ou l'accessoire qui vous intéresse.</span></div>
+      <div><b>2. Vérifiez</b><span>Contactez-nous pour confirmer le stock, le prix et la livraison.</span></div>
+      <div><b>3. Commandez</b><span>La commande est validée uniquement après accord sur toutes les conditions.</span></div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contacter Junior Shop</h2>
+    <p class="sub">WhatsApp : numéro professionnel à ajouter après validation du titulaire.</p>
+    <div class="notice">Le paiement Wave n'est pas encore activé sur ce site. N'envoyez aucun transfert à un numéro non vérifié. Les commandes et paiements devront être encadrés par un adulte de confiance.</div>
+  </section>
+</main>
+<footer><div class="wrap"><b>JUNIOR SHOP</b><p>Téléphones & accessoires · Côte d'Ivoire</p><span>© Junior Shop — Première version de démonstration.</span></div></footer>
+<script>
+document.querySelectorAll('.filters button').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
+ btn.classList.add('active');
+ document.querySelectorAll('.card').forEach(card=>{
+  card.style.display=(btn.dataset.filter==='all'||card.dataset.kind===btn.dataset.filter)?'':'none';
+ });
+}));
+</script>
+</body></html>
